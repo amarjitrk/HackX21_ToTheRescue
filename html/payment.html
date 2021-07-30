@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+    <link rel="stylesheet" href="/css/payment.css">
+    <!-- input[type=number]::-webkit-inner-spin-button,
+    input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+    } -->
+    <link rel="stylesheet" href="/css/services.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/hospstyle.css">
+</head>
+
+<body>
+    <p class="primary">Make a payment</p>
+    <p class="p2"> this payment is authorized by paypal</p>
+    <nav>
+        <a href="#card" class="one">credit/debit</a>
+        <a href="#net" class="one">Net Banking</a>
+        <a href="#UPI" class="one">UPI ID</a>
+    </nav>
+    <div class="details">
+        <form action="">
+            <div class="item" id="item1"><label for="number">credit/debit</label>
+                <input type="number" class="number">
+            </div>
+            <div class="item"><label for="date">Expiry Date</label>
+                <input type="date" class="date">
+            </div>
+            <div class="item"><label for="password">CVV</label>
+                <input type="password" class="password">
+            </div>
+            <input type="submit" value="Submit" class="button">
+        </form>
+    </div>
+</body>
+
+</html>

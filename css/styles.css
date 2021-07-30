@@ -1,0 +1,233 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+/* Header (navigation bar)  */
+.navbar .image {
+  width: 97px;
+  border-radius: 17px;
+  margin-left: 20px;
+}
+.navbar .logo {
+  height: 85%;
+}
+.nav {
+  margin-right: 20px;
+}
+.navbar {
+  display: flex;
+  /* height: 10vh; */
+  /* align-items: center; */
+  justify-content: space-between;
+  /* border: 2px red solid; */
+  position: relative;
+  background: #1100ff31;
+}
+.navbar ul {
+  display: flex;
+}
+.navbar ul li {
+  padding: 24px;
+  margin: 12px;
+
+  list-style: none;
+  font-size: 1.25rem;
+  font-family: "Cairo", sans-serif;
+}
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+}
+.navbar .one {
+  color: #ceff9d;
+  text-decoration: underline;
+}
+.navbar ul li a:hover {
+  color: #ceff9d;
+  text-decoration: underline;
+}
+
+/* End of Header (navigation bar) */
+
+/* Home section */
+.home {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  /* color: white; */
+  height: 90vh;
+  /* border: 2px red solid; */
+}
+.home p {
+  width: 500px;
+  font-size: 20px;
+  margin: 0 auto;
+  color: #00ffa5;
+  font-weight: bold;
+  font-family: "Cairo", sans-serif;
+  letter-spacing: 2px;
+}
+.home h1 span {
+  color: #ffffff;
+  text-shadow: 4px 0px 24px #00ffa5;
+  /* border: 2px solid #ff0a0a;
+  border-radius: 20px; */
+}
+.home h1 {
+  font-family: "Cairo", sans-serif;
+  margin-top: 124px;
+  margin-bottom: 45px;
+  font-size: 3rem;
+  color: #00ffa5;
+
+  text-shadow: rgb(15 255 0) 4px 0px 24px;
+}
+.home::before {
+  /* border: 10px yellow solid; */
+  content: "";
+  top: 0%;
+  left: 0%;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  opacity: 0.8;
+  background: url("../images/background1.webp") no-repeat center center/cover;
+}
+.home::after {
+  content: "";
+  top: 0%;
+  left: 0%;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  opacity: 0.5;
+  background: black;
+}
+
+/* end of home section */
+
+/* emergency services section */
+.emergency_services {
+  position: relative;
+  border: white 0.001px solid;
+}
+
+.emergency_services h1 {
+  margin-top: 77px;
+
+  margin-bottom: -30px;
+  font-size: 3rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Cairo", sans-serif;
+}
+.emergency_services .container {
+  background: #00325640;
+  border: white 2px solid;
+  border-radius: 15px;
+  font-family: "Cairo", sans-serif;
+  display: flex;
+  flex-direction: column;
+  height: 620px;
+  width: 35%;
+  margin: 5% auto 40px auto;
+  text-align: center;
+  font-weight: bold;
+}
+.container #name {
+  text-align: left;
+  /* color: #ffffff; */
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+}
+.container #age {
+  text-align: left;
+  /* color: #ffffff; */
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+}
+.container #item1 {
+  margin-top: 5px;
+}
+.container #number {
+  text-align: left;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.container #email {
+  text-align: left;
+  /* color: #ffffff; */
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.container #location {
+  text-align: left;
+  /* color: #ffffff; */
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.container input {
+  width: 75%;
+  font-family: "Cairo", sans-serif;
+  border-radius: 9px;
+  font-size: 1.1rem;
+  border: none;
+
+  outline: none;
+}
+.container .form-item {
+  padding-bottom: 20px;
+  width: 80%;
+  display: block;
+  margin: 0px auto;
+  font-size: 1.5rem;
+}
+.container #sub {
+  font-family: "Cairo", sans-serif;
+  background: #ffa500;
+  border-radius: 5px;
+  color: #ffffff;
+  border: none;
+  margin-top: 20px;
+  margin: 0 20px;
+  /* padding: 0px 84px; */
+  cursor: pointer;
+}
+.container #sub:hover {
+  background-color: #00ffa5;
+  color: black;
+}
+.emergency_services::before {
+  content: "";
+  top: 0%;
+  left: 0%;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  opacity: 0.5;
+  background: rgb(95 188 255);
+}
+.container .submit {
+  width: 30%;
+  display: block;
+  margin: 0px auto;
+}
+/* footer */
+.copyrights {
+  text-align: center;
+  background: black;
+  color: white;
+  font-family: "Cairo", sans-serif;
+}
