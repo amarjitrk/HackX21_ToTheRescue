@@ -332,6 +332,9 @@ body {
   opacity: 0.4;
   background: rgb(87, 79, 79);
 }
+.oxygen_supply #quantity {
+  font-family: "Cairo", sans-serif;
+}
 
 /* footer */
 .copyrights {
