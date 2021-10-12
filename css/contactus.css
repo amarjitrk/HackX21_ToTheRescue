@@ -29,6 +29,7 @@ body {
 }
 .navbar ul {
   display: flex;
+  font-family: "Cairo", sans-serif;
 }
 .navbar ul li {
   padding: 24px;
@@ -36,7 +37,6 @@ body {
 
   list-style: none;
   font-size: 1.25rem;
-  font-family: "Cairo", sans-serif;
 }
 .navbar ul li a {
   text-decoration: none;
@@ -50,6 +50,7 @@ body {
   color: #ceff9d;
   text-decoration: underline;
 }
+
 /* contact us */
 #contact h1 {
   text-align: center;
@@ -57,10 +58,12 @@ body {
   color: #14eaed;
   text-shadow: 2px 3px 4px coral;
   font-size: 3rem;
+  font-family: "Cairo", sans-serif;
 }
-#contact {
+
+/* #contact {
   position: relative;
-}
+} */
 .contact {
   display: flex;
   align-items: center;
@@ -72,6 +75,8 @@ body {
   display: block;
   margin: 0px auto;
   font-size: 1.5rem;
+  color: #fff;
+  font-family: "Cairo", sans-serif;
 }
 .contact input,
 .contact textarea {
@@ -92,21 +97,47 @@ body {
   z-index: -1;
   position: absolute;
 } */
-#contact::after {
-  background: url("../images/background4.webp") no-repeat center center/cover;
-  left: 0%;
-  top: 0%;
-  opacity: 0.4;
-  width: 100%;
-  height: 100%;
+#contact::before {
   content: "";
-  z-index: -1;
+  top: 0%;
+  left: 0%;
+  height: 100%;
+  width: 100%;
   position: absolute;
+  z-index: -1;
+  opacity: 0.4;
+  background: url("../images/background4.webp") no-repeat center center/cover;
+}
+
+#contact::after {
+  content: "";
+  top: 0%;
+  left: 0%;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  opacity: 0.5;
+  background: black;
 }
 .contact .submit {
   margin-bottom: 20px;
-  color: orange;
+  color: #fff;
   cursor: pointer;
+  width: 40%;
+  display: block;
+  margin: 0 auto;
+  background: orange;
+  padding: 5px;
+  border: none;
+}
+.contact .submit:hover {
+  background-color: #00ffa5;
+  color: black;
+}
+.contact .form-item input,
+textarea {
+  border: none;
 }
 /* footer */
 .copyrights {
